@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "367316f6-cd23-47a6-a617-ab675a37b748",
+		"name": "TP2SOA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7297213"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/tp2_serveur/RestAPI/agence/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tp2_serveur",
+						"RestAPI",
+						"agence",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/tp2_serveur/RestAPI/agence?id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tp2_serveur",
+						"RestAPI",
+						"agence"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/tp2_serveur/RestAPI/agence/Tunisie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tp2_serveur",
+						"RestAPI",
+						"agence",
+						"Tunisie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/tp2_serveur/RestAPI/agence",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tp2_serveur",
+						"RestAPI",
+						"agence"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"idAgence\": 1,\r\n        \"nomAgence\": \"MyTravels\",\r\n        \"voyageList\": [\r\n            {\r\n                \"idVoyage\": 1,\r\n                \"villeDepart\": \"TT\",\r\n                \"villeArrivee\": \"Tunisie\",\r\n                \"dateVoyage\": \"10-12-2022\"\r\n            },\r\n            {\r\n                \"idVoyage\": 2,\r\n                \"villeDepart\": \"HH\",\r\n                \"villeArrivee\": \"Tunisie\",\r\n                \"dateVoyage\": \"10-08-2022\"\r\n            }\r\n        ]\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/tp2_serveur/RestAPI/agence",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tp2_serveur",
+						"RestAPI",
+						"agence"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"idAgence\": 10,\r\n        \"nomAgence\": \"Tunisia Travels\",\r\n        \"voyageList\": [\r\n            {\r\n                \"dateVoyage\": \"12-12-2022\",\r\n                \"idVoyage\": 1,\r\n                \"villeArrivee\": \"Allemagne\",\r\n                \"villeDepart\": \"Tunisie\"\r\n            },\r\n            {\r\n                \"dateVoyage\": \"10-08-2022\",\r\n                \"idVoyage\": 2,\r\n                \"villeArrivee\": \"France\",\r\n                \"villeDepart\": \"Tunisie\"\r\n            }\r\n        ]\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/tp2_serveur/RestAPI/agence",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tp2_serveur",
+						"RestAPI",
+						"agence"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
